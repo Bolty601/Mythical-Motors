@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta name="viewport" content="width=device-width" initial-scale="1.0" charset="UTF-8">
+<title>Mythical Motors</title>
+
+<link rel="stylesheet" href="Stylesheet 1.css">
+
+</head>
+
+<body>
+<header>
+	<h1>
+	<a href="home.html" class="logo"></a> 
+	Mythical Motors
+	</h1>
+
+	<div class="menu-container">
+		<button class="menu-button">&#9776;</button>
+		<nav class="dropdown-menu">
+			<a href="home.html">Home</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="about.html">About</a>
+		</nav>
+	</div>
+</header>
+	<div class="image-box">
+		<img id="random-image" src="cappy.jpg" alt="Random Image">
+		<div class="image-overlay">
+			1970s Radius Motors Station Wagon in front of 'Colossal Cappy' - Screenshot taken by William Vickers in the game 'Pacific Drive'.
+		</div>
+	</div>
+
+<div class="home-description">
+Welcome to Mythical Motors, a site dedicated to documenting various fictional vehicles from all over, whether they be from movies, tv shows, or video games.
+</div>
+
+	<footer>
+		This is the footer of the site, ignore this.
+	</footer>
+
+<script>
+        const menuButton = document.querySelector('.menu-button');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        menuButton.addEventListener('click', () => {
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!menuButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+        //ChatGPT was used in the creation of this javascript to make the dropdown menu functional - script changes the menu box display to 'block' from 'none' when 'click' event occurs on the menu button, and vice versa if display is set to 'block'//
+</script>
+
+</body>
+
+</html>
+

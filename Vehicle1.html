@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta name="viewport" content="width=device-width" initial-scale="1.0" charset="UTF-8">
+<title>Radius Motors Station Wagon</title>
+
+<link rel="stylesheet" href="Stylesheet 1.css">
+
+</head>
+
+<body>
+<header>
+	<h1>
+	<a href="home.html" class="logo"></a> 
+	Radius Motors Station Wagon
+	</h1>
+
+	<div class="menu-container">
+		<button class="menu-button">&#9776;</button>
+		<nav class="dropdown-menu">
+			<a href="home.html">Home</a>
+			<a href="gallery.html">Gallery</a>
+			<a href="about.html">About</a>
+		</nav>
+	</div>
+</header>
+	<div class="image-box">
+		<img id="random-image" src="remnant.jpg" alt="Random Image">
+		<div class="image-overlay">
+			1970s Radius Motors Station Wagon sitting in Oppy's garage, painted black with a glow-in-the-dark stars wrap - Screenshot taken by William Vickers in the game 'Pacific Drive'.
+		</div>
+	</div>
+
+<div class="vehicle-description">
+    The Radius Motors Station Wagon is one of the only known cases of a vehicle functioning within the Olympic Exclusion Zone. It serves as the driver's (the player) lifeline, shielding them from the hazards of the zone, and as a mode of transport to get ever deeper into the zone to discover the secrets within. The vehicle was inspired by several different cars of the type as opposed to being modeled after one specific brand/make. The developers even released a fictional "owners manual" covering information, operation and maintanance of the wagon, as well as including some additional scriblings from a survivor in the zone.<br> 
+    The station wagon is no regular car, it is what is known as a "remnant". An anomaly which takes over a person's mind, slowly driving them insane as they try to get deeper and deeper into the zone. In Pacific Drive, it is up to the driver to uncover the secrets hidden within the Olympic Exclusion Zone and find a way to free themself from the remnant before they go insane.
+    </div>
+
+	<footer>
+		This is the footer of the site, ignore this.
+	</footer>
+
+<script>
+        const menuButton = document.querySelector('.menu-button');
+        const dropdownMenu = document.querySelector('.dropdown-menu');
+
+        menuButton.addEventListener('click', () => {
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+        });
+
+        document.addEventListener('click', (e) => {
+            if (!menuButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                dropdownMenu.style.display = 'none';
+            }
+        });
+        //ChatGPT was used in the creation of this javascript to make the dropdown menu functional - script changes the menu box display to 'block' from 'none' when 'click' event occurs on the menu button, and vice versa if display is set to 'block'//
+</script>
+
+</body>
+
+</html>
+
